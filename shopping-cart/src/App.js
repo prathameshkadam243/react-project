@@ -65,7 +65,7 @@ function App() {
     newProductList.push({
       price: price,
       name: name,
-      quantity: 0
+      quantity: 0,
     });
     setProductList(newProductList);
   };
@@ -74,7 +74,7 @@ function App() {
     <>
       <Navbar />
       <main className="container mt-5">
-        <AddItem addItem={addItem}/>
+        <AddItem addItem={addItem} />
         <ProductList
           products={products}
           incrementQuantity={incrementQuantity}
